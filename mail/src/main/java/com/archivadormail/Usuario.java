@@ -1,16 +1,18 @@
 package com.archivadormail;
-
+import java.util.ArrayList;
 public class Usuario {
-    private String name;
-    private String email;
+    private Contacto miContacto;
+    private Bandeja entrada;
+    private Bandeja salida;
+    private ArrayList<Contacto> lista;
     public Usuario(String nameP,String emailP){
-        name=nameP;
-        email=emailP;
+        contactoUs.setName(nameP);
+        contactoUs.setEmail(emailP);
     }
     public String getName(){
-        return name;
+        return contactoUs.getName();
     }
     public String getEmail(){
-        return email;
+        return contactoUs.getEmail();
     }
 }

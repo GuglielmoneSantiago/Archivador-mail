@@ -13,4 +13,10 @@ public class Contacto {
     public String getEmail(){
         return email;
     }
+    public void setName(String nameP){
+        name=nameP;
+    }
+    public void setEmail(String emailP){
+        email=emailP;
+    }
 }
