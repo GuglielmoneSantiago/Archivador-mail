@@ -6,8 +6,8 @@ public class Mail {
     private String asunto;
     private String contenido;
     private String remitente;
-    ArrayList<Contacto> para;
-    public Mail(String asuntoP,String contenidoP,Contacto remitenteP,Contacto paraP){
+    ArrayList<Usuario> para;
+    public Mail(String asuntoP,String contenidoP,Usuario remitenteP,Usuario paraP){
         asunto=asuntoP;
         contenido=contenidoP;
         remitente=remitenteP.getEmail();
@@ -22,8 +22,8 @@ public class Mail {
     public String getRemitente(){
         return remitente;
     }
-    public void addPara(Contacto contacto){
-        para.add(contacto);;
+    public void addPara(Usuario usuario){
+        para.add(usuario);;
     }
     public String getPara(){
         String p="";

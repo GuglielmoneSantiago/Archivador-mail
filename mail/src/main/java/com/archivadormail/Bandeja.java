@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 public class Bandeja {
     ArrayList<Mail> lista;
-    
-    public void setMailActivo(){
-        
+    public ArrayList<Mail> getLista() {
+        return lista;
     }
 }
