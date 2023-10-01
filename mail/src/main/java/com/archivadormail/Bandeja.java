@@ -7,4 +7,7 @@ public class Bandeja {
     public ArrayList<Mail> getLista() {
         return lista;
     }
+    public void addLista(Mail m){
+        lista.add(m);
+    }
 }
