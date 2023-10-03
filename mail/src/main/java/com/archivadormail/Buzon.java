@@ -1,9 +1,9 @@
 package com.archivadormail;
-public class Usuario {
+public class Buzon {
     private Contacto miContacto;
     private Bandeja entrada;
     private Bandeja salida;
-    public Usuario(String nameP,String emailP){
+    public Buzon(String nameP,String emailP){
         miContacto.setName(nameP);
         miContacto.setEmail(emailP);
     }
