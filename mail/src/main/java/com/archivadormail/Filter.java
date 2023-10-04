@@ -7,9 +7,9 @@ import java.util.stream.Collectors;
 
 public class Filter {
     public List<Buzon> nombre(String nombreP,List<Buzon> lista){
-        List<Buzon>n=new ArrayList<>();
+        List<Buzon>buzones=new ArrayList<>();
         Predicate <Buzon> nombre= buzon->buzon.getEmail().contains(nombreP);
-        n=lista.stream().filter(nombre).collect(Collectors.toList());
-        return n;
+        buzones=lista.stream().filter(nombre).collect(Collectors.toList());
+        return buzones;
     }
 }
