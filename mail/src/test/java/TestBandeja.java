@@ -1,12 +1,11 @@
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
 import com.archivadormail.*; 
-public class BandejaTest {
+public class TestBandeja {
     @Test
-    public void listaTest(){
+    public void listaTest_addLista(){
         Bandeja b=new Bandeja();
         Mail m=new Mail("", "", "u", "u");
         b.addLista(m);

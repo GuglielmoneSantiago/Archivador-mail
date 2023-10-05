@@ -5,7 +5,7 @@ public class Buzon {
     private Bandeja salida;
     public Buzon(String nameP,String emailP){
         miContacto.setName(nameP);
-        miContacto.setEmail(emailP);
+        miContacto.setEmail(emailP+"@gmail.com");
     }
     public String getName(){
         return miContacto.getName();

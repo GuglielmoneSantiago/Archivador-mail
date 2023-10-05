@@ -15,7 +15,7 @@ public class MailManager {
     
     public void MandarMailUnaPersona(String asuntoP,String contenidoP,String remitenteP,String paraP){
         Mail mail=new Mail(asuntoP, contenidoP, remitenteP, paraP);
-        Filter filtro=new Filter();
+        FilterNombre filtro=new FilterNombre();
         Buzon remitente=filtro.nombre(remitenteP,buzones).get(0);
         remitente.addMailSalida(mail);
         Buzon para=filtro.nombre(paraP,buzones).get(0);

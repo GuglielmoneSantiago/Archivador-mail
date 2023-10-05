@@ -30,7 +30,7 @@ public class Mail {
         String p="";
         for(int i=0;i<para.size();i++){
             p=p+para.get(i)+" ";
-            p=p+para.get(i)+"\n";
+            p=p+"\n";
         }
         return p;  
     }
