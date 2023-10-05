@@ -4,8 +4,8 @@ public class Contacto {
     private String name;
     private String email;
     public Contacto(String nameP,String emailP){
-        name=nameP;
-        email=emailP+"@gmail.com";
+        setName(nameP);;
+        setEmail(emailP+"@gmail.com");
     }
     public String getName(){
         return name;

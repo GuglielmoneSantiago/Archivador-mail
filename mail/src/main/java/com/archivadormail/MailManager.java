@@ -15,13 +15,18 @@ public class MailManager {
     
     public void MandarMailUnaPersona(String asuntoP,String contenidoP,String remitenteP,String paraP){
         Mail mail=new Mail(asuntoP, contenidoP, remitenteP, paraP);
-        FilterNombre filtro=new FilterNombre();
-        Buzon remitente=filtro.nombre(remitenteP,buzones).get(0);
+        FilterCorreo filtroRemitente=new FilterCorreo();
+        Buzon remitente=filtroRemitente.nombre(remitenteP,buzones).get(0);
         remitente.addMailSalida(mail);
-        Buzon para=filtro.nombre(paraP,buzones).get(0);
+        FilterCorreo filtroPara=new FilterCorreo();
+        Buzon para=filtroPara.nombre(paraP,buzones).get(0);
         para.addMailEntrada(mail);
     }
-    public void agregarBuzon(Buzon buzonP){
-        buzones.add(buzonP);
+    public List<Buzon> getBuzones(){
+        return buzones;
+    }
+    public void nuevoBuzon(String nombreP,String emailP){
+        Buzon n=new Buzon(nombreP, emailP);
+        buzones.add(n);
     }
 }
