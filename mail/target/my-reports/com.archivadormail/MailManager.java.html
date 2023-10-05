@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MailManager.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">mail</a> &gt; <a href="index.source.html" class="el_package">com.archivadormail</a> &gt; <span class="el_source">MailManager.java</span></div><h1>MailManager.java</h1><pre class="source lang-java linenums">package com.archivadormail;       
+import java.util.ArrayList;
+import java.util.List;
+<span class="nc" id="L4">public class MailManager {</span>
+<span class="nc" id="L5">    private List&lt;Buzon&gt;buzones=new ArrayList&lt;&gt;();</span>
+    public void MandarMailVariasPersonas(String asuntoP,String contenidoP,String remitenteP,ArrayList&lt;String&gt; para){
+<span class="nc" id="L7">        Mail mail=new Mail(asuntoP, contenidoP, remitenteP, para.get(0));</span>
+<span class="nc bnc" id="L8" title="All 2 branches missed.">        if(para.size()&gt;1){</span>
+<span class="nc bnc" id="L9" title="All 2 branches missed.">            for(int i=1;i&lt;para.size();i++){</span>
+<span class="nc" id="L10">                mail.addPara(para.get(i));</span>
+            }
+        }
+        
+<span class="nc" id="L14">    }</span>
+    
+    public void MandarMailUnaPersona(String asuntoP,String contenidoP,String remitenteP,String paraP){
+<span class="nc" id="L17">        Mail mail=new Mail(asuntoP, contenidoP, remitenteP, paraP);</span>
+<span class="nc" id="L18">        Filter filtro=new Filter();</span>
+<span class="nc" id="L19">        Buzon remitente=filtro.nombre(remitenteP,buzones).get(0);</span>
+<span class="nc" id="L20">        remitente.addMailSalida(mail);</span>
+<span class="nc" id="L21">        Buzon para=filtro.nombre(paraP,buzones).get(0);</span>
+<span class="nc" id="L22">        para.addMailEntrada(mail);</span>
+<span class="nc" id="L23">    }</span>
+    public void agregarBuzon(Buzon buzonP){
+<span class="nc" id="L25">        buzones.add(buzonP);</span>
+<span class="nc" id="L26">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>
