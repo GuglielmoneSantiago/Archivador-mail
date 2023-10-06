@@ -5,14 +5,19 @@ import java.util.List;
 
 public class Mail {
     private String asunto;
+    private String fecha;
     private String contenido;
     private String remitente;
-    List<String> para= new ArrayList<>();
-    public Mail(String asuntoP,String contenidoP,String remitenteP,String paraP){
+    private List<String> para= new ArrayList<>();
+    public Mail(String fechaP,String asuntoP,String contenidoP,String remitenteP,String paraP){
+        fecha=fechaP;
         asunto=asuntoP;
         contenido=contenidoP;
         remitente=remitenteP;
         para.add(paraP);
+    }
+    public String getFecha(){
+        return fecha;
     }
     public String getAsunto(){
         return asunto;
