@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Mail {
+    private String fecha;
     private String asunto;
     private String contenido;
     private String remitente;
@@ -13,6 +14,9 @@ public class Mail {
         contenido=contenidoP;
         remitente=remitenteP;
         para.add(paraP);
+    }
+    public String getFecha(){
+        return fecha;
     }
     public String getAsunto(){
         return asunto;
