@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 public class MailManager {
     private List<Buzon>buzones=new ArrayList<>();
-    public void MandarMailVariasPersonas(String asuntoP,String contenidoP,String remitenteP,ArrayList<String> paraP){
+    public void MandarMailVariasPersonas(String asuntoP,String contenidoP,String remitenteP,List<String> paraP){
         Mail mail=new Mail(asuntoP, contenidoP, remitenteP, paraP.get(0));
         if(paraP.size()>1){
             for(int i=1;i<paraP.size();i++){
