@@ -20,9 +20,9 @@ public class Buzon{
         return salida;
     }
     public void addMailEntrada(Mail mailP){
-        entrada.lista.add(mailP);
+        entrada.getLista().add(mailP);
     }
     public void addMailSalida(Mail mailP){
-        salida.lista.add(mailP);
+        salida.getLista().add(mailP);
     }
 }

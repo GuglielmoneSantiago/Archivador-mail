@@ -8,7 +8,7 @@ public class Mail {
     private String asunto;
     private String contenido;
     private String remitente;
-    List<String> para= new ArrayList<>();
+    private List<String> para= new ArrayList<>();
     public Mail(String asuntoP,String contenidoP,String remitenteP,String paraP){
         if(remitenteP==null||remitenteP.isEmpty()){
             throw new IllegalArgumentException("El remitente no puede estar vacío o ser nulo");
