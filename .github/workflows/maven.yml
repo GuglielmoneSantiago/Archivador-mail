@@ -21,7 +21,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
-      - name: Build with Maven
+      - name: Test with Maven
         run: mvn clean test
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -70,30 +70,17 @@ jobs:
         uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+          
     
       - name: Commit and Push Generated Files
         run: |
+          git rm --cached -r .
+          
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+
+          git add -f badge.svg
+          git add -f target/my-reports/*
           
-          git checkout -- src/
-          rm -rf src
-          git add src/
-
-          git checkout -- .github/
-          rm -rf .github
-          git add .github/
-
-          git checkout -- pom.xml
-          rm pom.xml
-          git add pom.xml
-
-          git checkout -- README.md
-          rm README.md
-
-          git add badge.svg
-          
-          git add target/my-reports/*
           git commit -m "Add generated files"
           git push --force origin HEAD:reports
-
