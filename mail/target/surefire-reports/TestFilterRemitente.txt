@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestFilterRemitente
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in TestFilterRemitente
-filterRemitente_Test(TestFilterRemitente)  Time elapsed: 0 s  <<< ERROR!
-java.lang.IllegalArgumentException: El para no puede estar vacío o ser nulo
-	at TestFilterRemitente.filterRemitente_Test(TestFilterRemitente.java:18)
-
