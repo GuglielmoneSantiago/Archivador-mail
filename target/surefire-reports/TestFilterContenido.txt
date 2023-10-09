@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestFilterContenido
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in TestFilterContenido
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in TestFilterContenido
+filterContenido_Test(TestFilterContenido)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: El remitente no puede estar vacío o ser nulo
+	at TestFilterContenido.filterContenido_Test(TestFilterContenido.java:15)
+

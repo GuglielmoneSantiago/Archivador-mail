@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bandeja {
-    private ist<Mail> lista=new ArrayList<>();
+    private List<Mail> lista=new ArrayList<>();
     public List<Mail> getLista() {
         return lista;
     }

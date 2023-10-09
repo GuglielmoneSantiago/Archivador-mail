@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestFilterCorreo" time="0.005" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestFilterCorreo" time="0" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="c:\Santi\Segundo Año\Segundo cuatrimentre\Paradigmas y Lenguajes de Programación II\Archivador mail\target\test-classes;c:\Santi\Segundo Año\Segundo cuatrimentre\Paradigmas y Lenguajes de Programación II\Archivador mail\target\classes;C:\Users\Usuario\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="c:\Santi\Segundo Año\Segundo cuatrimentre\Paradigmas y Lenguajes de Programación II\Archivador mail\mail\target\test-classes;c:\Santi\Segundo Año\Segundo cuatrimentre\Paradigmas y Lenguajes de Programación II\Archivador mail\mail\target\classes;C:\Users\Usuario\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="AR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\Usuario\AppData\Local\Temp\surefire14643434730762413827\surefirebooter7620532955360951492.jar C:\Users\Usuario\AppData\Local\Temp\surefire14643434730762413827 2023-10-09T01-27-11_255-jvmRun1 surefire3854844106058221009tmp surefire_012787575806093363444tmp"/>
+    <property name="sun.java.command" value="C:\Users\Usuario\AppData\Local\Temp\surefire14897237334416076547\surefirebooter1514471781186438406.jar C:\Users\Usuario\AppData\Local\Temp\surefire14897237334416076547 2023-10-09T01-22-18_719-jvmRun1 surefire12792777455752800369tmp surefire_07905133061600949886tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="c:\Santi\Segundo Año\Segundo cuatrimentre\Paradigmas y Lenguajes de Programación II\Archivador mail\target\test-classes;c:\Santi\Segundo Año\Segundo cuatrimentre\Paradigmas y Lenguajes de Programación II\Archivador mail\target\classes;C:\Users\Usuario\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="c:\Santi\Segundo Año\Segundo cuatrimentre\Paradigmas y Lenguajes de Programación II\Archivador mail\mail\target\test-classes;c:\Santi\Segundo Año\Segundo cuatrimentre\Paradigmas y Lenguajes de Programación II\Archivador mail\mail\target\classes;C:\Users\Usuario\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Usuario"/>
     <property name="user.language" value="es"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2023-09-19"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="c:\Santi\Segundo Año\Segundo cuatrimentre\Paradigmas y Lenguajes de Programación II\Archivador mail"/>
+    <property name="basedir" value="c:\Santi\Segundo Año\Segundo cuatrimentre\Paradigmas y Lenguajes de Programación II\Archivador mail\mail"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Usuario\AppData\Local\Temp\surefire14643434730762413827\surefirebooter7620532955360951492.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Usuario\AppData\Local\Temp\surefire14897237334416076547\surefirebooter1514471781186438406.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21+35-LTS-2513"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\Usuario\AppData\Local\Temp\"/>
     <property name="java.version" value="21"/>
-    <property name="user.dir" value="c:\Santi\Segundo Año\Segundo cuatrimentre\Paradigmas y Lenguajes de Programación II\Archivador mail"/>
+    <property name="user.dir" value="c:\Santi\Segundo Año\Segundo cuatrimentre\Paradigmas y Lenguajes de Programación II\Archivador mail\mail"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
