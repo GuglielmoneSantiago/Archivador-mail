@@ -1,8 +1,13 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+mail,com.archivadormail,FilterRemitenteYContenido,0,37,0,0,0,7,0,4,0,4
 mail,com.archivadormail,Bandeja,0,17,0,0,0,5,0,3,0,3
+mail,com.archivadormail,FilterAsunto,0,25,0,0,0,5,0,3,0,3
 mail,com.archivadormail,FilterCorreo,0,25,0,0,0,5,0,3,0,3
 mail,com.archivadormail,FilterNombre,0,25,0,0,0,5,0,3,0,3
 mail,com.archivadormail,Contacto,0,24,0,0,0,10,0,5,0,5
-mail,com.archivadormail,MailManager,30,64,4,0,5,14,3,4,1,4
+mail,com.archivadormail,MailManager,0,137,1,5,0,26,1,7,0,5
 mail,com.archivadormail,Buzon,0,57,0,0,0,15,0,7,0,7
-mail,com.archivadormail,Mail,0,61,0,2,0,17,0,7,0,6
+mail,com.archivadormail,FilterRemitenteYAsunto,0,37,0,0,0,7,0,4,0,4
+mail,com.archivadormail,Mail,13,71,4,6,3,19,5,7,1,6
+mail,com.archivadormail,FilterContenido,0,25,0,0,0,5,0,3,0,3
+mail,com.archivadormail,FilterRemitente,0,25,0,0,0,5,0,3,0,3
